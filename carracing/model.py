@@ -96,7 +96,7 @@ class Model:
     z = mu + np.exp(logvar/2.0) * np.random.randn(*s)
     return z, mu, logvar
 
-  def get_action(self, z):
+  def get_action(self, z, refaction=np.array([0, 0, 0])):
     h = rnn_output(self.state, z, EXP_MODE)
 
     '''
@@ -115,7 +115,10 @@ class Model:
     action[1] = (action[1]+1.0) / 2.0
     action[2] = clip(action[2])
 
-    self.state = rnn_next_state(self.rnn, z, action, self.state)
+    if np.array_equal(refaction, np.array([0, 0, 0])):
+      self.state = rnn_next_state(self.rnn, z, action, self.state)
+    else:
+      self.state = rnn_next_state(self.rnn, z, refaction, self.state)
 
     return h, action, origin
 
