@@ -18,10 +18,11 @@ DIR_NAME = 'record'
 if not os.path.exists(DIR_NAME):
     os.makedirs(DIR_NAME)
 
-model = make_model(load_model=False)
+model = make_model()
 
 total_frames = 0
 model.make_env(render_mode=render_mode, full_episode=True)
+model.load_model('log/carracing.cma.16.64.best.json')
 for trial in range(MAX_TRIALS): # 200 trials per worker
   try:
     random_generated_int = random.randint(0, 2**31-1)
@@ -29,11 +30,11 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
     recording_obs = []
     recording_action = []
 
-    np.random.seed(random_generated_int)
-    model.env.seed(random_generated_int)
+    #np.random.seed(random_generated_int)
+    #model.env.seed(random_generated_int)
 
     # random policy
-    model.init_random_model_params(stdev=np.random.rand()*0.01)
+    #model.init_random_model_params(stdev=np.random.rand()*0.01)
 
     model.reset()
     obs = model.env.reset() # pixels
