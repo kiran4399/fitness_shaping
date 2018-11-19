@@ -9,7 +9,6 @@ import time
 
 from vae.vae import ConvVAE
 from rnn.rnn import hps_sample, MDNRNN, rnn_init_state, rnn_next_state, rnn_output, rnn_output_size
-from pyglet.window import key
 
 render_mode = True
 
@@ -109,15 +108,14 @@ class Model:
       h = np.tanh(np.dot(h, self.weight_hidden) + self.bias_hidden)
       action = np.tanh(np.dot(h, self.weight_output) + self.bias_output)
     else:
-      origin = np.dot(h, self.weight) + self.bias
-      action = np.tanh(origin)
+      action = np.tanh(np.dot(h, self.weight) + self.bias)
     
     action[1] = (action[1]+1.0) / 2.0
     action[2] = clip(action[2])
 
     self.state = rnn_next_state(self.rnn, z, action, self.state)
 
-    return h, action, origin
+    return action
 
   def set_model_params(self, model_params):
     if EXP_MODE == MODE_Z_HIDDEN: # one hidden layer
@@ -153,28 +151,13 @@ class Model:
     rnn_params = self.rnn.get_random_model_params(stdev=stdev)
     self.rnn.set_model_params(rnn_params)
 
-def key_press(k, mod):
-  global restart
-  if k==0xff0d: restart = True
-  if k==key.LEFT:  a[0] = -1.0
-  if k==key.RIGHT: a[0] = +1.0
-  if k==key.UP:    a[1] = +1.0
-  if k==key.DOWN:  a[2] = +0.8   # set 1.0 for wheels to block to zero rotation
-def key_release(k, mod):
-  if k==key.LEFT  and a[0]==-1.0: a[0] = 0
-  if k==key.RIGHT and a[0]==+1.0: a[0] = 0
-  if k==key.UP:    a[1] = 0
-  if k==key.DOWN:  a[2] = 0
-
-  
-a = np.array([0.0, 0.0, 0.0])
-
 def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, max_len=-1):
 
   reward_list = []
   t_list = []
+
   max_episode_length = 1000
-  recording_mode = True
+  recording_mode = False
   penalize_turning = False
 
   if train_mode and max_len > 0:
@@ -184,7 +167,6 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     random.seed(seed)
     np.random.seed(seed)
     model.env.seed(seed)
-
 
   for episode in range(num_episode):
 
@@ -199,10 +181,8 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     filename = "record/"+str(random_generated_int)+".npz"
     recording_mu = []
     recording_logvar = []
-    recording_h = []
     recording_action = []
-    recording_reward = []
-    recording_haction = []
+    recording_reward = [0]
 
     for t in range(max_episode_length):
 
@@ -210,20 +190,13 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
         model.env.render("human")
       else:
         model.env.render('rgb_array')
-      model.env.viewer.window.on_key_press = key_press
-      model.env.viewer.window.on_key_release = key_release
+
       z, mu, logvar = model.encode_obs(obs)
-      h, action, origin = model.get_action(z)
+      action = model.get_action(z)
 
-      #action = a
-      if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False:
-        action = a
-
-      recording_h.append(h)
       recording_mu.append(mu)
       recording_logvar.append(logvar)
       recording_action.append(action)
-      recording_haction.append(origin)
 
       obs, reward, done, info = model.env.step(action)
 
@@ -238,21 +211,25 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
       #  print("action", action, "step reward", reward)
 
       total_reward += reward
-      print(total_reward)
 
       if done:
         break
 
-
+    #for recording:
+    z, mu, logvar = model.encode_obs(obs)
+    action = model.get_action(z)
+    recording_mu.append(mu)
+    recording_logvar.append(logvar)
+    recording_action.append(action)
 
     recording_mu = np.array(recording_mu, dtype=np.float16)
     recording_logvar = np.array(recording_logvar, dtype=np.float16)
-    recording_h = np.array(recording_h, dtype=np.float16)
     recording_action = np.array(recording_action, dtype=np.float16)
     recording_reward = np.array(recording_reward, dtype=np.float16)
-    recording_haction = np.array(recording_haction, dtype=np.float16)
 
-    np.savez_compressed(filename, mu=recording_mu, h = recording_h, logvar=recording_logvar, action=recording_action, reward=recording_reward, haction=recording_haction)
+    if not render_mode:
+      if recording_mode:
+        np.savez_compressed(filename, mu=recording_mu, logvar=recording_logvar, action=recording_action, reward=recording_reward)
 
     if render_mode:
       print("total reward", total_reward, "timesteps", t)

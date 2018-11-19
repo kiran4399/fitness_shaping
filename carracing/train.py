@@ -23,11 +23,9 @@ from es import CMAES, SimpleGA, OpenES, PEPG
 import argparse
 import time
 
-
-np.set_printoptions(threshold=np.nan)
 ### ES related code
 num_episode = 1
-eval_steps = 1 # evaluate every N_eval steps
+eval_steps = 25 # evaluate every N_eval steps
 retrain_mode = True
 cap_time_mode = True
 
@@ -209,11 +207,6 @@ def slave():
     assert(len(packet) == SOLUTION_PACKET_SIZE)
     solutions = decode_solution_packet(packet)
     results = []
-
-    print("*****************************Start of a packet***************************")
-    print("\n")
-    print("\n")
-    print("\n")
     for solution in solutions:
       worker_id, jobidx, seed, train_mode, max_len, weights = solution
       assert (train_mode == 1 or train_mode == 0), str(train_mode)
@@ -223,25 +216,6 @@ def slave():
       jobidx = int(jobidx)
       seed = int(seed)
       fitness, timesteps = worker(weights, seed, train_mode, max_len)
-      
-      print("##############Start of a solution#############")
-      print("\n")
-      print("Worker ID", worker_id)
-      print("\n")
-      print("Job idx", jobidx)
-      print("\n")
-      print("Seed", seed)
-      print("\n")
-      print("Train mode", train_mode)
-      print("\n")
-      print("Max len", max_len)
-      print("\n")
-      print("Weights", weights)
-      print("\n")
-      print("fitness", fitness)
-      print("\n")
-      print("timesteps", timesteps)
-      print("\n")
       results.append([worker_id, jobidx, fitness, timesteps])
     result_packet = encode_result_packet(results)
     assert len(result_packet) == RESULT_PACKET_SIZE
@@ -457,7 +431,7 @@ if __name__ == "__main__":
   
   parser.add_argument('-o', '--optimizer', type=str, help='ses, pepg, openes, ga, cma.', default='cma')
   parser.add_argument('--num_episode', type=int, default=16, help='num episodes per trial')
-  parser.add_argument('--eval_steps', type=int, default=1, help='evaluate every eval_steps step')
+  parser.add_argument('--eval_steps', type=int, default=25, help='evaluate every eval_steps step')
   parser.add_argument('-n', '--num_worker', type=int, default=64)
   parser.add_argument('-t', '--num_worker_trial', type=int, help='trials per worker', default=1)
   parser.add_argument('--antithetic', type=int, default=1, help='set to 0 to disable antithetic sampling')
