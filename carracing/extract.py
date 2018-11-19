@@ -30,8 +30,8 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
     recording_obs = []
     recording_action = []
 
-    #np.random.seed(random_generated_int)
-    #model.env.seed(random_generated_int)
+    np.random.seed(random_generated_int)
+    model.env.seed(random_generated_int)
 
     # random policy
     #model.init_random_model_params(stdev=np.random.rand()*0.01)
@@ -48,7 +48,7 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
       recording_obs.append(obs)
 
       z, mu, logvar = model.encode_obs(obs)
-      action = model.get_action(z)
+      h, action, origin = model.get_action(z)
 
       recording_action.append(action)
       obs, reward, done, info = model.env.step(action)
