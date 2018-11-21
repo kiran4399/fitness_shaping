@@ -10,6 +10,7 @@ import time
 from vae.vae import ConvVAE
 from rnn.rnn import hps_sample, MDNRNN, rnn_init_state, rnn_next_state, rnn_output, rnn_output_size
 from pyglet.window import key
+from gym.envs.box2d.car_racing import CarRacing
 
 render_mode = True
 
@@ -159,9 +160,9 @@ class Model:
 def key_press(k, mod):
   global restart
   if k==0xff0d: restart = True
-  if k==key.LEFT:  a[0] = -0.5
-  if k==key.RIGHT: a[0] = +0.5
-  if k==key.UP:    a[1] = +0.8
+  if k==key.LEFT:  a[0] = -1.0
+  if k==key.RIGHT: a[0] = +1.0
+  if k==key.UP:    a[1] = +1.0
   if k==key.DOWN:  a[2] = +0.2   # set 1.0 for wheels to block to zero rotation
 def key_release(k, mod):
   if k==key.LEFT  and a[0]==-1.0: a[0] = 0
@@ -188,9 +189,14 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     np.random.seed(seed)
     model.env.seed(seed)
 
+  if render_mode:
+    model.env.render("human")
+  else:
+    model.env.render('rgb_array')
+  model.env.viewer.window.on_key_press = key_press
+  model.env.viewer.window.on_key_release = key_release
 
   for episode in range(num_episode):
-
     model.reset()
 
     obs = model.env.reset()
@@ -206,29 +212,27 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     recording_action = []
     recording_reward = []
     recording_haction = []
+    truth = True
 
     for t in range(max_episode_length):
-
-      if render_mode:
-        model.env.render("human")
-      else:
-        model.env.render('rgb_array')
-      model.env.viewer.window.on_key_press = key_press
-      model.env.viewer.window.on_key_release = key_release
       z, mu, logvar = model.encode_obs(obs)
       h, action, origin = model.get_action(z)
 
       #action = a
       if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False:
         action = a
+        truth = False
+      else:
+        truth = True
 
       recording_h.append(h)
       recording_mu.append(mu)
       recording_logvar.append(logvar)
       recording_action.append(action)
-      recording_haction.append(origin)
+      recording_haction.append(truth)
 
       obs, reward, done, info = model.env.step(action)
+      model.env.render()
 
       extra_reward = 0.0 # penalize for turning too frequently
       if train_mode and penalize_turning:
@@ -252,7 +256,7 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     recording_h = np.array(recording_h, dtype=np.float16)
     recording_action = np.array(recording_action, dtype=np.float16)
     recording_reward = np.array(recording_reward, dtype=np.float16)
-    recording_haction = np.array(recording_haction, dtype=np.float16)
+    recording_haction = np.array(recording_haction, dtype=np.bool)
 
     np.savez_compressed(filename, mu=recording_mu, h = recording_h, logvar=recording_logvar, action=recording_action, reward=recording_reward, haction=recording_haction)
 

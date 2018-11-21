@@ -13,38 +13,45 @@ MAX_FRAMES = 1000 # max length of carracing
 
 render_mode = False # for debugging.
 
-
+directory = '/home/kiran/fitness_shaping/carracing/segment/'
+record = '/home/kiran/testrecord/'
 
 def compute_loss(action, refaction):
-  mse = (np.square(action - refaction)).mean(axis=ax)
+  mse = (np.square(action - refaction)).mean(axis=None)
   return mse
 
 
-directory = 'segment'
-record = '../data'
-
-for filename in os.listdir(directory):
+def runner(weights, checker):
   model = make_model()
   model.make_env(render_mode=render_mode, full_episode=True)
 
-  model.load_model(filename)
+  if checker == True:
+    model.load_model(weights)
+  else:
+    model.set_model_params(weights)
   total_loss = 0.0
   iters = 0
-  for each in os.listdir(record)::
+  for each in os.listdir(record):
     model.reset()
     obs = model.env.reset() # pixels
-    obs, refaction = np.load(each)
+    data = np.load(record+each)
+    obs = data['obs']
+    refaction = data['action']
+    for i in range(obs.shape[0]):
 
-    for i in range(obs)
-
-      z, mu, logvar = model.encode_obs(obs)
-      h, action, origin = model.get_action(z, refaction)
+      z, mu, logvar = model.encode_obs(obs[i])
+      h, action, origin = model.get_action(z, refaction[i])
       total_loss += compute_loss(action, refaction)
-      recording_action.append(action)
-      obs, reward, done, info = model.env.step(action)
       iters = iters+1
+  model.env.close()
 
-  total_loss = total_loss/iters
-  print("for first weight", total_loss)
 
-model.env.close()
+def main():
+  for filename in os.listdir(directory):
+    total_loss = runner(directory+filename, record, True)
+    print(total_loss/iters)
+    print("for first weight", total_loss)
+
+
+if __name__ == "__main__":
+  main()

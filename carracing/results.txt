@@ -1,0 +1,108 @@
+model using cpu
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+loading file /home/kiran/fitness_shaping/carracing/segment/fitnessap.json
+Track generation: 1079..1357 -> 278-tiles track
+0.4710424447368368
+Track generation: 1187..1488 -> 301-tiles track
+0.45054632327714256
+Track generation: 1080..1354 -> 274-tiles track
+0.4407171735416859
+Track generation: 1140..1435 -> 295-tiles track
+0.43454820967876623
+Track generation: 1180..1480 -> 300-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1279..1603 -> 324-tiles track
+0.4309692341466784
+Track generation: 1068..1340 -> 272-tiles track
+0.42790270342644277
+Track generation: 1199..1503 -> 304-tiles track
+0.4250536802249865
+Track generation: 1173..1471 -> 298-tiles track
+0.4229629381032927
+Track generation: 1152..1444 -> 292-tiles track
+0.42333560904645656
+Track generation: 1145..1435 -> 290-tiles track
+0.42400865182168374
+Track generation: 1129..1426 -> 297-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1272..1594 -> 322-tiles track
+0.4242892344709718
+Track generation: 1018..1285 -> 267-tiles track
+0.4228730011284077
+Track generation: 1179..1486 -> 307-tiles track
+0.421823651282485
+Track generation: 1095..1373 -> 278-tiles track
+0.42219211066781587
+Track generation: 1136..1424 -> 288-tiles track
+0.42149629821019957
+Track generation: 1296..1625 -> 329-tiles track
+0.42264769621343085
+Track generation: 1160..1454 -> 294-tiles track
+0.4221276157419447
+Track generation: 1184..1484 -> 300-tiles track
+0.42168001807262073
+Track generation: 1131..1423 -> 292-tiles track
+0.42148268681336204
+Track generation: 978..1226 -> 248-tiles track
+0.4223539898869459
+Track generation: 1187..1488 -> 301-tiles track
+0.420953458026896
+Track generation: 1280..1604 -> 324-tiles track
+0.4209880851236076
+Track generation: 1089..1365 -> 276-tiles track
+0.4215933189544714
+Track generation: 1165..1460 -> 295-tiles track
+0.4218038991728265
+Track generation: 1162..1457 -> 295-tiles track
+0.42148688915766475
+Track generation: 1298..1627 -> 329-tiles track
+0.4213883230424
+Track generation: 1046..1316 -> 270-tiles track
+0.42109674758379906
+Track generation: 1114..1396 -> 282-tiles track
+0.4208807669254809
+Track generation: 1030..1300 -> 270-tiles track
+0.4209280726343359
+Track generation: 1187..1488 -> 301-tiles track
+0.4209105422703444
+Track generation: 1248..1564 -> 316-tiles track
+0.4216776634637933
+Track generation: 1265..1585 -> 320-tiles track
+0.4213920744952843
+Track generation: 1163..1458 -> 295-tiles track
+0.42057711169991424
+Track generation: 1058..1330 -> 272-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1101..1389 -> 288-tiles track
+0.42064266113908355
+Track generation: 1238..1552 -> 314-tiles track
+0.42086984640082514
+Track generation: 993..1250 -> 257-tiles track
+0.42094190504582923
+Track generation: 1109..1390 -> 281-tiles track
+0.42133661911926445
+Track generation: 1030..1292 -> 262-tiles track
+0.42092050785248986
+Track generation: 1157..1450 -> 293-tiles track
+0.42071222260858165
+Track generation: 1175..1473 -> 298-tiles track
+0.4202138125601877
+Track generation: 1216..1524 -> 308-tiles track
+0.42030152980498786
+Track generation: 1052..1326 -> 274-tiles track
+0.4203085252847579
+Track generation: 939..1185 -> 246-tiles track
+0.4206706045772349
+Track generation: 1212..1519 -> 307-tiles track
+0.42021186164023694
+Track generation: 1190..1492 -> 302-tiles track
+0.4198626898716635
+Track generation: 1108..1396 -> 288-tiles track
+0.41961245259813096
+Track generation: 1038..1310 -> 272-tiles track
+0.41944660253111615
+Track generation: 1100..1388 -> 288-tiles track
+0.41931556509046514
+Track generation: 985..1240 -> 255-tiles track

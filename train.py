@@ -192,12 +192,13 @@ def worker(weights, seed, train_mode_int=1, max_len=-1):
   model.set_model_params(weights)
   reward_list, t_list = simulate(model,
     train_mode=train_mode, render_mode=False, num_episode=num_episode, seed=seed, max_len=max_len)
+  value = run.runner(weights, False)
   if batch_mode == 'min':
     reward = np.min(reward_list)
   else:
     reward = np.mean(reward_list)
   t = np.mean(t_list)
-  return reward, t
+  return value*reward, t
 
 def slave():
   model.make_env()
