@@ -7,6 +7,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import json
+import os
 
 np.set_printoptions(threshold=np.nan)
 # *Load necessary libraries*
@@ -20,12 +21,19 @@ def load_model(filename):
     weight = np.array(model_params[3:]).reshape(288, 3)
     return weight, b
 
+def load_train(folder):
+    for each in os.listdir(folder):
 
-data_x = np.load('record/580246697/h.npy')
-data_y = np.load('record/580246697/origin.npy')
-data_action = np.load('record/580246697/action.npy')
+        if each == os.listdir(folder)[0]:
+            data_x = np.load(folder+each)['h']
+            data_y = np.load(folder+each)['origin']
+            data_action = np.load(folder+each)['action']
+        else:
+            data_x = np.concatenate(data_x, np.load(folder+each)['h'])
+            data_y = np.concatenate(data_y, np.load(folder+each)['origin'])
+            data_action = np.concatenate(data_action, np.load(folder+each)['action'])
 
-
+        return data_x, data_y
 #data_x = data_x[:4,:2]
 #data_y = data_y[:4,:1]
 # *Generate our data*
@@ -37,7 +45,7 @@ data_action = np.load('record/580246697/action.npy')
 
 # In[4]:
 
-
+data_x, data_y = load_train('record/')
 #order = np.random.permutation(len(data_x))
 train_x = data_x
 train_y = data_y
@@ -51,7 +59,7 @@ train_y = data_y
 
 #test_y = np.put(train_y.flatten(), human, test_y.flatten())
 
-print(train_x.shape)
+#print(train_x.shape)
 #print(test_x.shape)
 
 #freevars = np.array([np.random.randint(0, 288, size=int((len(test_x)*train_x.shape[1])/1000)), np.random.randint(288, 576, size=int((len(test_x)*train_x.shape[1])/1000)), np.random.randint(576, 864, size=int((len(test_x)*train_x.shape[1])/1000))])
@@ -73,7 +81,9 @@ def get_gradient(w, b, x, y):
 
 w = np.random.randn(288,3)
 b = np.random.randn(1,3)
-#w,b = load_model('log/fitness-19.json')
+
+
+actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
 #b = b.reshape(1,3)
 
 #ya = w[:4].dot(train_x[:4].T)+b
@@ -86,7 +96,14 @@ tolerance = 1e-5
 # Perform Gradient Descent
 iterations = 1
 while True:
+    w = np.random.randn(288,3)
+    b = np.random.randn(1,3)
     gradient, db, error = get_gradient(w, b, train_x, train_y)
+    actualgrad = np.divide(actualw, w)
+    learnrate = np.divide(actualgrad, gradient)
+
+    print(learnrate)
+    break
     #gradient = gradient.flatten()
     #np.put(gradient, freevars, np.zeros(270))
     #gradient = gradient.reshape(288,3)
@@ -119,8 +136,8 @@ while True:
     w = new_w
     b = new_b
 
-print "w =",w
-print "Test Cost =", get_gradient(w, b, train_x, test_y)[2]
+#print "w =",w
+#print "Test Cost =", get_gradient(w, b, train_x, test_y)[2]
 
 
 # *Perform gradient descent to learn model*
