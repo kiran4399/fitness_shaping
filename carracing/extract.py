@@ -60,7 +60,7 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
 
     total_frames += (frame+1)
     print("dead at", frame+1, "total recorded frames for this worker", total_frames)
-    recording_obs = np.array(recording_obs, dtype=np.uint8)
+    recording_obs = np.array(recording_obs, dtype=np.float16)
     recording_action = np.array(recording_action, dtype=np.float16)
     recording_origin = np.array(recording_origin, dtype=np.float16)
     np.savez_compressed(filename, h=recording_obs, action=recording_action, origin=recording_origin)
