@@ -46,11 +46,11 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
       else:
         model.env.render("rgb_array")
 
-      recording_obs.append(obs)
 
       z, mu, logvar = model.encode_obs(obs)
       h, action, origin = model.get_action(z)
 
+      recording_obs.append(h)
       recording_action.append(action)
       recording_origin.append(origin)
       obs, reward, done, info = model.env.step(action)
@@ -63,7 +63,7 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
     recording_obs = np.array(recording_obs, dtype=np.uint8)
     recording_action = np.array(recording_action, dtype=np.float16)
     recording_origin = np.array(recording_origin, dtype=np.float16)
-    np.savez_compressed(filename, obs=recording_obs, action=recording_action, origin=recording_origin)
+    np.savez_compressed(filename, h=recording_obs, action=recording_action, origin=recording_origin)
   except gym.error.Error:
     print("stupid gym error, life goes on")
     model.env.close()
