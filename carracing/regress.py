@@ -22,18 +22,19 @@ def load_model(filename):
     return weight, b
 
 def load_train(folder):
-    for each in os.listdir(folder):
+    allfolders = os.listdir(folder)
+    for each in allfolders:
 
-        if each == os.listdir(folder)[0]:
+        if each == allfolders[0]:
             data_x = np.load(folder+each)['h']
             data_y = np.load(folder+each)['origin']
             data_action = np.load(folder+each)['action']
         else:
-            data_x = np.concatenate(data_x, np.load(folder+each)['h'])
-            data_y = np.concatenate(data_y, np.load(folder+each)['origin'])
-            data_action = np.concatenate(data_action, np.load(folder+each)['action'])
+            data_x = np.concatenate((data_x, np.load(folder+each)['h']))
+            data_y = np.concatenate((data_y, np.load(folder+each)['origin']))
+            data_action = np.concatenate((data_action, np.load(folder+each)['action']))
 
-        return data_x, data_y
+    return data_x, data_y
 #data_x = data_x[:4,:2]
 #data_y = data_y[:4,:1]
 # *Generate our data*
@@ -50,6 +51,8 @@ data_x, data_y = load_train('record/')
 train_x = data_x
 train_y = data_y
 
+
+print(train_x.shape)
 
 # *Shuffle data and produce train and test sets*
 
@@ -96,24 +99,19 @@ tolerance = 1e-5
 # Perform Gradient Descent
 iterations = 1
 while True:
-    w = np.random.randn(288,3)
-    b = np.random.randn(1,3)
+    w,b = load_model('log/fitness-19.json')
     gradient, db, error = get_gradient(w, b, train_x, train_y)
-    actualgrad = np.divide(actualw, w)
-    learnrate = np.divide(actualgrad, gradient)
-
-    print(learnrate)
-    break
-    #gradient = gradient.flatten()
-    #np.put(gradient, freevars, np.zeros(270))
-    #gradient = gradient.reshape(288,3)
+    
+    #learnrate = np.divide(actualw - w, gradient)
+    #print(learnrate)
+    #print(np.sum(learnrate, axis=0))
     
 
     #print(gradient.shape)
     #print(freevars)
 
-    if(iterations > 50000):
-        break
+    #if(iterations > 50000):
+        #break
     #print(gradient)
     #db = np.zeros((1,3))
     new_w = w - alpha * gradient
@@ -131,6 +129,7 @@ while True:
     # Print error every 50 iterations
     if iterations % 100 == 0:
         print "Iteration: %d - Error: %.4f" %(iterations, error)
+        savejson(w, filename)
     
     iterations += 1
     w = new_w
