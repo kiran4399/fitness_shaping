@@ -29,6 +29,7 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
     filename = DIR_NAME+"/"+str(random_generated_int)+".npz"
     recording_obs = []
     recording_action = []
+    recording_origin = []
 
     np.random.seed(random_generated_int)
     model.env.seed(random_generated_int)
@@ -51,6 +52,7 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
       h, action, origin = model.get_action(z)
 
       recording_action.append(action)
+      recording_origin.append(origin)
       obs, reward, done, info = model.env.step(action)
 
       if done:
@@ -60,7 +62,8 @@ for trial in range(MAX_TRIALS): # 200 trials per worker
     print("dead at", frame+1, "total recorded frames for this worker", total_frames)
     recording_obs = np.array(recording_obs, dtype=np.uint8)
     recording_action = np.array(recording_action, dtype=np.float16)
-    np.savez_compressed(filename, obs=recording_obs, action=recording_action)
+    recording_origin = np.array(recording_origin, dtype=np.float16)
+    np.savez_compressed(filename, obs=recording_obs, action=recording_action, origin=recording_origin)
   except gym.error.Error:
     print("stupid gym error, life goes on")
     model.env.close()
