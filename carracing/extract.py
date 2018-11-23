@@ -10,7 +10,7 @@ import gym
 from model import make_model
 
 MAX_FRAMES = 1000 # max length of carracing
-MAX_TRIALS = 200 # just use this to extract one trial. 
+MAX_TRIALS = 2 # just use this to extract one trial. 
 
 render_mode = False # for debugging.
 
