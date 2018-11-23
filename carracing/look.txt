@@ -1,0 +1,2 @@
+Iteration: 100 - Error: 1.9706
+Iteration: 200 - Error: 1.1643

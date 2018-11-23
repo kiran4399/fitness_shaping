@@ -6,7 +6,7 @@ import sys
 
 from env import make_env
 import time
-
+import copy
 from vae.vae import ConvVAE
 from rnn.rnn import hps_sample, MDNRNN, rnn_init_state, rnn_next_state, rnn_output, rnn_output_size
 from pyglet.window import key
@@ -160,13 +160,13 @@ class Model:
 def key_press(k, mod):
   global restart
   if k==0xff0d: restart = True
-  if k==key.LEFT:  a[0] = -1.0
-  if k==key.RIGHT: a[0] = +1.0
-  if k==key.UP:    a[1] = +1.0
+  if k==key.LEFT:  a[0] = -0.9
+  if k==key.RIGHT: a[0] = +0.9
+  if k==key.UP:    a[1] = +0.9
   if k==key.DOWN:  a[2] = +0.2   # set 1.0 for wheels to block to zero rotation
 def key_release(k, mod):
-  if k==key.LEFT  and a[0]==-1.0: a[0] = 0
-  if k==key.RIGHT and a[0]==+1.0: a[0] = 0
+  if k==key.LEFT  and a[0]==-0.9: a[0] = 0
+  if k==key.RIGHT and a[0]==+0.9: a[0] = 0
   if k==key.UP:    a[1] = 0
   if k==key.DOWN:  a[2] = 0
 
@@ -212,6 +212,7 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     recording_action = []
     recording_reward = []
     recording_haction = []
+    recording_origin = []
     truth = True
 
     for t in range(max_episode_length):
@@ -220,7 +221,7 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
 
       #action = a
       if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False:
-        action = a
+        action = copy.deepcopy(a)
         truth = False
       else:
         truth = True
@@ -230,7 +231,9 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
       recording_logvar.append(logvar)
       recording_action.append(action)
       recording_haction.append(truth)
-
+      recording_origin.append(origin)
+      #print(action)
+      
       obs, reward, done, info = model.env.step(action)
       model.env.render()
 
@@ -257,8 +260,9 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
     recording_action = np.array(recording_action, dtype=np.float16)
     recording_reward = np.array(recording_reward, dtype=np.float16)
     recording_haction = np.array(recording_haction, dtype=np.bool)
+    recording_origin = np.array(recording_origin, dtype=np.float16)
 
-    np.savez_compressed(filename, mu=recording_mu, h = recording_h, logvar=recording_logvar, action=recording_action, reward=recording_reward, haction=recording_haction)
+    np.savez_compressed(filename, mu=recording_mu, h = recording_h, logvar=recording_logvar, action=recording_action, reward=recording_reward, haction=recording_haction, origin=recording_origin)
 
     if render_mode:
       print("total reward", total_reward, "timesteps", t)
