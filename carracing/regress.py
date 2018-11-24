@@ -33,7 +33,7 @@ def load_model(filename):
 
 def load_train(folder):
     allfolders = os.listdir(folder)
-    for each in allfolders:
+    for each in allfolders[:int(len(allfolders)/2)]:
 
         if each == allfolders[0]:
             data_x = np.load(folder+each)['h']
