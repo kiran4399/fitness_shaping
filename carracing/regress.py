@@ -33,7 +33,7 @@ def load_model(filename):
 
 def load_train(folder):
     allfolders = os.listdir(folder)
-    for each in allfolders[:int(len(allfolders)/2)]:
+    for each in allfolders:
 
         if each == allfolders[0]:
             data_x = np.load(folder+each)['h']
@@ -57,12 +57,8 @@ def load_train(folder):
 # In[4]:
 
 data_x, data_y = load_train('record/')
-#order = np.random.permutation(len(data_x))
-train_x = data_x
-train_y = data_y
 
-
-print(train_x.shape)
+print(data_x.shape)
 
 # *Shuffle data and produce train and test sets*
 
@@ -110,6 +106,9 @@ weights = []
 #actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
 #b = b.reshape(1,3)
 
+
+
+
 #ya = w[:4].dot(train_x[:4].T)+b
 #print(ya.T.flatten() - train_y[:4].flatten())
 
@@ -119,9 +118,13 @@ tolerance = 1e-5
 
 # Perform Gradient Descent
 iterations = 1
+
+
 while True:
+    order = np.random.permutation(len(data_x))
+    train_x = data_x[order[:16]]
+    train_y = data_y[order[:16]]
     gradient, db, error = get_gradient(w, b, train_x, train_y)
-    
     #learnrate = np.divide(actualw - w, gradient)
     #print(learnrate)
     #print(np.sum(learnrate, axis=0))
