@@ -8,6 +8,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 import os
+import evaluate_descent
+from mpi4py import MPI
+import sys
+import subprocess
+
+mpi_warn_on_fork = 0
+
+size = MPI.COMM_WORLD.Get_size()
+rank = MPI.COMM_WORLD.Get_rank()
+name = MPI.Get_processor_name()
 
 np.set_printoptions(threshold=np.nan)
 # *Load necessary libraries*
@@ -80,13 +90,24 @@ def get_gradient(w, b, x, y):
 
 # *Create gradient function*
 
+def savejson(weights, base, iteration):
+    filenames = []
+    for each in reversed(weights):
+        filenames.append(base + str(iteration) + '.json')
+        with open(base + str(iteration) + '.json', 'wt') as out:
+            res = json.dump([each.flatten().tolist()], out, sort_keys=True, indent=0, separators=(',', ': '))
+        iteration -= 100
+    return filenames
+
+
+
 # In[6]:
 
 w = np.random.randn(288,3)
 b = np.random.randn(1,3)
+weights = []
 
-
-actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
+#actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
 #b = b.reshape(1,3)
 
 #ya = w[:4].dot(train_x[:4].T)+b
@@ -99,7 +120,6 @@ tolerance = 1e-5
 # Perform Gradient Descent
 iterations = 1
 while True:
-    w,b = load_model('log/fitness-19.json')
     gradient, db, error = get_gradient(w, b, train_x, train_y)
     
     #learnrate = np.divide(actualw - w, gradient)
@@ -129,8 +149,16 @@ while True:
     # Print error every 50 iterations
     if iterations % 100 == 0:
         print "Iteration: %d - Error: %.4f" %(iterations, error)
-        savejson(w, filename)
+        weights.append(np.concatenate((b,w)))
     
+    if iterations %1000 == 0:
+
+        print "Saving weights until %d\n", (iterations)
+        filenames = savejson(weights, "log/descent/", iterations)
+
+        #print "Evaluating with %d size and %d rank\n", (size, rank)
+        #evaluate_descent.run(size, rank, filenames)
+
     iterations += 1
     w = new_w
     b = new_b
