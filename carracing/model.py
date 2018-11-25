@@ -173,7 +173,7 @@ def key_release(k, mod):
   
 a = np.array([0.0, 0.0, 0.0])
 
-def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, max_len=-1):
+def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, seed=-1, max_len=-1):
 
   reward_list = []
   t_list = []
@@ -205,7 +205,7 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
 
     random_generated_int = np.random.randint(2**31-1)
 
-    filename = "record/"+str(random_generated_int)+".npz"
+    filename = "generation/"+str(random_generated_int)+".npz"
     recording_mu = []
     recording_logvar = []
     recording_h = []
@@ -220,11 +220,12 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
       h, action, origin = model.get_action(z)
 
       #action = a
-      if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False:
+      if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False or expert == True:
         action = copy.deepcopy(a)
         truth = False
       else:
         truth = True
+  
 
       recording_h.append(h)
       recording_mu.append(mu)
@@ -232,7 +233,7 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
       recording_action.append(action)
       recording_haction.append(truth)
       recording_origin.append(origin)
-      #print(action)
+      print(action)
       
       obs, reward, done, info = model.env.step(action)
       model.env.render()
@@ -273,8 +274,12 @@ def simulate(model, train_mode=False, render_mode=True, num_episode=5, seed=-1, 
 
 def main():
 
-  assert len(sys.argv) > 1, 'python model.py render/norender path_to_mode.json [seed]'
+  #assert len(sys.argv) > 1, 'python model.py render/norender path_to_mode.json [seed]'
+  if len(sys.argv) == 2:
+    expert = True
 
+  else:
+    expert = False
 
   render_mode_string = str(sys.argv[1])
   if (render_mode_string == "render"):
@@ -309,7 +314,7 @@ def main():
     N_episode = 1
   reward_list = []
   for i in range(N_episode):
-    reward, steps_taken = simulate(model,
+    reward, steps_taken = simulate(model, expert,
       train_mode=False, render_mode=render_mode, num_episode=1)
     if render_mode:
       print("terminal reward", reward, "average steps taken", np.mean(steps_taken)+1)

@@ -43,8 +43,9 @@ def load_train(folder):
             data_x = np.concatenate((data_x, np.load(folder+each)['h']))
             data_y = np.concatenate((data_y, np.load(folder+each)['origin']))
             data_action = np.concatenate((data_action, np.load(folder+each)['action']))
-
-    return data_x, data_y
+    data_action[data_action == 1.0] = 0.9
+    data_action[data_action == -1.0] = -0.9
+    return data_x, np.arctanh(data_action)
 #data_x = data_x[:4,:2]
 #data_y = data_y[:4,:1]
 # *Generate our data*
@@ -58,7 +59,7 @@ def load_train(folder):
 
 data_x, data_y = load_train('record/')
 
-print(data_x.shape)
+#print(data_y)
 
 # *Shuffle data and produce train and test sets*
 
@@ -75,9 +76,10 @@ print(data_x.shape)
 #freevars = np.array([np.random.randint(0, 576, size=int((len(test_x)*train_x.shape[1])/1000)*2)])
 #print(freevars)
 def get_gradient(w, b, x, y):
-    y_estimate = np.dot(x,w)
+    y_estimate = np.dot(x,w) + b
+    #print(y)
+    #print(y_estimate)
     error = (y - y_estimate)
-    #print(error)
     mse = (np.square(error)).mean(axis=None)
     gradient = -(1.0/len(x)) * np.dot(x.T,error)
     db = -np.sum(error, axis=0, keepdims=True)
@@ -97,39 +99,56 @@ def savejson(weights, base, iteration):
 
 
 
-# In[6]:
+    
 
-w = np.random.randn(288,3)
-b = np.random.randn(1,3)
+startw = np.zeros((288,3))
+startb = np.zeros((1,3))
 weights = []
 
 #actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
-#b = b.reshape(1,3)
-
+actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
+#startw,notstartb = load_model('log/old/600000.json')
+w = startw
+b = startb.reshape(1,3)
 
 
 
 #ya = w[:4].dot(train_x[:4].T)+b
 #print(ya.T.flatten() - train_y[:4].flatten())
 
-alpha = .01
+alpha = .05
 tolerance = 1e-5
 #freevars = freevars.reshape(180)
 
 # Perform Gradient Descent
 iterations = 1
 
-
 while True:
+    data_x = data_x[:6]
     order = np.random.permutation(len(data_x))
-    train_x = data_x[order[:16]]
-    train_y = data_y[order[:16]]
-    gradient, db, error = get_gradient(w, b, train_x, train_y)
+    sgd = 0
+    sdb = 0
+    error = 0
+    j = 1
+    numbatch = len(data_x)/j
+    for i in range(numbatch):
+        #train_x = data_x
+        #train_y = data_y
+        train_x = data_x[order[j*i:j*(i+1)]]
+        train_y = data_y[order[j*i:j*(i+1)]]
+        print(train_y)
+        gradient, db, mse = get_gradient(w, b, train_x, train_y)
+        sgd += gradient
+        sdb += db
+        error += mse
+        sgd /= numbatch
+        sdb /= numbatch
+        error /= numbatch
     #learnrate = np.divide(actualw - w, gradient)
     #print(learnrate)
     #print(np.sum(learnrate, axis=0))
     
-
+    
     #print(gradient.shape)
     #print(freevars)
 
@@ -137,30 +156,31 @@ while True:
         #break
     #print(gradient)
     #db = np.zeros((1,3))
-    new_w = w - alpha * gradient
-    new_b = b - alpha * db
+    new_w = w - alpha * sgd
+    new_b = b - alpha * sdb
     
+
     #print("x", train_x)
     #print("y", train_y)
     #print("w", new_w)
     #print("b", new_b)
     # Stopping Condition
-    if np.sum(abs(new_w - w)) < tolerance:
-        print "Converged."
-        break
 
     # Print error every 50 iterations
     if iterations % 100 == 0:
-        print "Iteration: %d - Error: %.4f" %(iterations, error)
-        weights.append(np.concatenate((b,w)))
-    
-    if iterations %1000 == 0:
-
+        print "Iteration: %d - Error: %.4f - Deviation: %.4f" %(iterations, error, (np.square(new_w-actualw).mean(axis=None)))
+        weights.append(np.concatenate((new_b,new_w)))
+    if iterations %300 == 0:
         print "Saving weights until %d\n", (iterations)
-        filenames = savejson(weights, "log/descent/", iterations)
-
+        filenames = savejson(weights, "log/human/", iterations)
+        weights = []
         #print "Evaluating with %d size and %d rank\n", (size, rank)
         #evaluate_descent.run(size, rank, filenames)
+
+    if np.sum(abs(new_w - w)) < tolerance:
+        print "Converged."
+        print w
+        break
 
     iterations += 1
     w = new_w
