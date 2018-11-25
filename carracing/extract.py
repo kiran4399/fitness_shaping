@@ -22,7 +22,8 @@ model = make_model()
 
 total_frames = 0
 model.make_env(render_mode=render_mode, full_episode=True)
-model.load_model('log/carracing.cma.16.64.best.json')
+#model.load_model('log/carracing.cma.16.64.best.json')
+model.load_model('log/experiment/100.json')
 for trial in range(MAX_TRIALS): # 200 trials per worker
   try:
     random_generated_int = random.randint(0, 2**31-1)

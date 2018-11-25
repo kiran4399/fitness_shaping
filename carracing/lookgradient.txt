@@ -1,0 +1,898 @@
+filename log/descent/108400.json
+filename log/descent/14300.json
+filename log/descent/94700.json
+2018-11-23 17:31:42.884704: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename log/descent/132700.json
+filename log/descent/133500.json
+model using cpu
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+filename log/descent/21900.json
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/46300.json
+filename log/descent/71400.json
+2018-11-23 17:31:43.235067: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:43.276577: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+model using cpu
+model using cpu
+2018-11-23 17:31:43.519026: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename log/descent/111600.json
+filename log/descent/134600.json
+filename log/descent/62700.json
+filename log/descent/114900.json
+filename log/descent/130800.json
+filename log/descent/142600.json
+model using cpu
+filename log/descent/77000.json
+2018-11-23 17:31:43.928410: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename log/descent/74300.json
+filename log/descent/122300.json
+filename log/descent/60100.json
+2018-11-23 17:31:44.093128: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.153346: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:44.304607: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+2018-11-23 17:31:44.590448: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.599205: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.614370: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.654428: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.758448: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:44.759923: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-23 17:31:44.842359: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:44.852453: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:44.949157: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-23 17:31:44.998914: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/55400.json
+filename log/descent/27500.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/17100.json
+filename log/descent/74100.json
+filename log/descent/33300.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+filename log/descent/158700.json
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/57300.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+No protocol specified
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+    return pyglet.canvas.get_display()
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+filename log/descent/9400.json
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/82300.json
+filename log/descent/104900.json
+filename log/descent/99100.json
+filename log/descent/136500.json
+filename log/descent/100600.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/62600.json
+filename log/descent/124600.json
+2018-11-23 17:31:47.649424: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename log/descent/149100.json
+2018-11-23 17:31:47.669916: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+filename log/descent/145600.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+2018-11-23 17:31:47.757363: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:47.773268: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:47.774472: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:47.803043: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-23 17:31:47.878950: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:47.932076: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+2018-11-23 17:31:48.010969: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.017525: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:48.057754: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:48.071418: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.084313: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.106131: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.107999: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.115412: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:48.115402: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+model using cpu
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+model using cpu
+filename log/descent/76300.json
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+2018-11-23 17:31:48.703212: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+No protocol specified
+Traceback (most recent call last):
+  File "model.py", line 12, in <module>
+    from pyglet.window import key
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1896, in <module>
+    gl._create_shadow_window()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/gl/__init__.py", line 208, in _create_shadow_window
+    _shadow_window = Window(width=1, height=1, visible=False)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/xlib/__init__.py", line 166, in __init__
+    super(XlibWindow, self).__init__(*args, **kwargs)
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 501, in __init__
+    display = get_platform().get_default_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/window/__init__.py", line 1845, in get_default_display
+    return pyglet.canvas.get_display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/__init__.py", line 82, in get_display
+    return Display()
+  File "/home/kiran/.local/lib/python3.6/site-packages/pyglet/canvas/xlib.py", line 86, in __init__
+    raise NoSuchDisplayException('Cannot connect to "%s"' % name)
+pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"
+model using cpu
+filename log/descent/99900.json
+filename log/descent/60200.json
+filename log/descent/154700.json
+2018-11-23 17:31:49.271970: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-23 17:31:49.355202: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-23 17:31:49.437785: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+filename log/descent/17400.json
+2018-11-23 17:31:50.242594: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file log/descent/132700.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+model size 867
+loading file log/descent/134600.json
+loading file log/descent/74300.json
+model size 867
+loading file log/descent/71400.json
+model size 867
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+loading file log/descent/21900.json
+Track generation: 1195..1498 -> 303-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file log/descent/130800.json
+Track generation: 1175..1473 -> 298-tiles track
+model size 867
+loading file log/descent/142600.json
+Track generation: 1178..1477 -> 299-tiles track
+Track generation: 1132..1421 -> 289-tiles track
+Track generation: 992..1244 -> 252-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file log/descent/111600.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 995..1248 -> 253-tiles track
+Track generation: 1093..1370 -> 277-tiles track
+model size 867
+loading file log/descent/114900.json
+model size 867
+loading file log/descent/46300.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1147..1438 -> 291-tiles track
+model size 867
+loading file log/descent/60100.json
+model size 867
+loading file log/descent/14300.json
+Track generation: 1057..1329 -> 272-tiles track
+Track generation: 1230..1541 -> 311-tiles track
+model size 867
+loading file log/descent/17100.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1131..1418 -> 287-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1106..1387 -> 281-tiles track
+Track generation: 995..1248 -> 253-tiles track
+model size 867
+loading file log/descent/27500.json
+model size 867
+loading file log/descent/62700.json
+model size 867
+loading file log/descent/74100.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file log/descent/133500.json
+model size 867
+loading file log/descent/122300.json
+model size 867
+loading file log/descent/108400.json
+model size 867
+loading file log/descent/77000.json
+Track generation: 1151..1443 -> 292-tiles track
+Track generation: 1139..1432 -> 293-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1202..1507 -> 305-tiles track
+Track generation: 1052..1319 -> 267-tiles track
+model size 867
+loading file log/descent/82300.json
+model size 867
+loading file log/descent/104900.json
+Track generation: 1131..1418 -> 287-tiles track
+Track generation: 1076..1356 -> 280-tiles track
+model size 867
+loading file log/descent/94700.json
+Track generation: 1000..1254 -> 254-tiles track
+Track generation: 1096..1381 -> 285-tiles track
+Track generation: 1125..1410 -> 285-tiles track
+model size 867
+loading file log/descent/62600.json
+Track generation: 1249..1565 -> 316-tiles track
+Track generation: 1240..1554 -> 314-tiles track
+model size 867
+loading file log/descent/9400.json
+model size 867
+loading file log/descent/76300.json
+model size 867
+loading file log/descent/136500.json
+Track generation: 1048..1314 -> 266-tiles track
+model size 867
+loading file log/descent/100600.json
+model size 867
+loading file log/descent/124600.json
+Track generation: 1043..1308 -> 265-tiles track
+Track generation: 1212..1519 -> 307-tiles track
+model size 867
+loading file log/descent/33300.json
+Track generation: 1057..1325 -> 268-tiles track
+Track generation: 1078..1351 -> 273-tiles track
+model size 867
+loading file log/descent/57300.json
+Track generation: 1236..1549 -> 313-tiles track
+model size 867
+loading file log/descent/145600.json
+Track generation: 1137..1425 -> 288-tiles track
+model size 867
+loading file log/descent/149100.json
+model size 867
+loading file log/descent/55400.json
+Track generation: 1151..1443 -> 292-tiles track
+model size 867
+loading file log/descent/99100.json
+Track generation: 1315..1648 -> 333-tiles track
+Track generation: 1149..1440 -> 291-tiles track
+Track generation: 1243..1558 -> 315-tiles track
+model size 867
+loading file log/descent/154700.json
+model size 867
+loading file log/descent/99900.json
+Track generation: 1086..1369 -> 283-tiles track
+Track generation: 1067..1338 -> 271-tiles track
+model size 867
+loading file log/descent/60200.json
+model size 867
+loading file log/descent/17400.json
+Track generation: 1124..1409 -> 285-tiles track
+Track generation: 1264..1595 -> 331-tiles track
+Track generation: 1087..1363 -> 276-tiles track
+model size 867
+loading file log/descent/158700.json
+Track generation: 1095..1373 -> 278-tiles track
+total reward -80.15873015872984 timesteps 999
+filename log/descent/17100.json terminal reward [-80.15873015872984] average steps taken 1000.0
+total reward -84.12698412698359 timesteps 999
+filename log/descent/130800.json terminal reward [-84.12698412698359] average steps taken 1000.0
+total reward -80.07968127490008 timesteps 999
+filename log/descent/21900.json terminal reward [-80.07968127490008] average steps taken 1000.0
+total reward -82.51748251748205 timesteps 999
+filename log/descent/14300.json terminal reward [-82.51748251748205] average steps taken 1000.0
+total reward -83.16498316498267 timesteps 999
+filename log/descent/134600.json terminal reward [-83.16498316498267] average steps taken 1000.0
+total reward -81.54981549815457 timesteps 999
+filename log/descent/46300.json terminal reward [-81.54981549815457] average steps taken 1000.0
+total reward -84.962406015037 timesteps 999
+filename log/descent/62700.json terminal reward [-84.962406015037] average steps taken 1000.0
+total reward -82.7586206896547 timesteps 999
+filename log/descent/111600.json terminal reward [-82.7586206896547] average steps taken 1000.0
+total reward -81.06060606060568 timesteps 999
+filename log/descent/9400.json terminal reward [-81.06060606060568] average steps taken 1000.0
+total reward -82.1428571428567 timesteps 999
+filename log/descent/60100.json terminal reward [-82.1428571428567] average steps taken 1000.0
+total reward -84.18972332015755 timesteps 999
+filename log/descent/77000.json terminal reward [-84.18972332015755] average steps taken 1000.0
+total reward -82.63888888888845 timesteps 999
+filename log/descent/71400.json terminal reward [-82.63888888888845] average steps taken 1000.0
+total reward -83.44370860927101 timesteps 999
+filename log/descent/132700.json terminal reward [-83.44370860927101] average steps taken 1000.0
+total reward -86.01398601398537 timesteps 999
+filename log/descent/122300.json terminal reward [-86.01398601398537] average steps taken 1000.0
+total reward -86.57718120805302 timesteps 999
+filename log/descent/74300.json terminal reward [-86.57718120805302] average steps taken 1000.0
+total reward -81.88405797101407 timesteps 999
+filename log/descent/142600.json terminal reward [-81.88405797101407] average steps taken 1000.0
+total reward -82.39436619718265 timesteps 999
+filename log/descent/108400.json terminal reward [-82.39436619718265] average steps taken 1000.0
+total reward -84.9056603773579 timesteps 999
+filename log/descent/62600.json terminal reward [-84.9056603773579] average steps taken 1000.0
+total reward -83.87096774193496 timesteps 999
+filename log/descent/114900.json terminal reward [-83.87096774193496] average steps taken 1000.0
+total reward -85.91549295774584 timesteps 999
+filename log/descent/82300.json terminal reward [-85.91549295774584] average steps taken 1000.0
+total reward -81.48148148148108 timesteps 999
+filename log/descent/154700.json terminal reward [-81.48148148148108] average steps taken 1000.0
+total reward -86.0627177700342 timesteps 999
+filename log/descent/33300.json terminal reward [-86.0627177700342] average steps taken 1000.0
+total reward -86.84210526315721 timesteps 999
+filename log/descent/74100.json terminal reward [-86.84210526315721] average steps taken 1000.0
+total reward -81.27340823969999 timesteps 999
+filename log/descent/136500.json terminal reward [-81.27340823969999] average steps taken 1000.0
+total reward -81.61764705882312 timesteps 999
+filename log/descent/100600.json terminal reward [-81.61764705882312] average steps taken 1000.0
+total reward -82.81786941580708 timesteps 999
+filename log/descent/27500.json terminal reward [-82.81786941580708] average steps taken 1000.0
+total reward -86.25429553264539 timesteps 999
+filename log/descent/57300.json terminal reward [-86.25429553264539] average steps taken 1000.0
+total reward -82.39436619718265 timesteps 999
+filename log/descent/99900.json terminal reward [-82.39436619718265] average steps taken 1000.0
+total reward -82.07885304659455 timesteps 999
+filename log/descent/133500.json terminal reward [-82.07885304659455] average steps taken 1000.0
+total reward -86.9281045751627 timesteps 999
+filename log/descent/76300.json terminal reward [-86.9281045751627] average steps taken 1000.0
+total reward -87.26114649681458 timesteps 999
+filename log/descent/55400.json terminal reward [-87.26114649681458] average steps taken 1000.0
+total reward -87.3015873015866 timesteps 999
+filename log/descent/104900.json terminal reward [-87.3015873015866] average steps taken 1000.0
+total reward -81.8181818181814 timesteps 999
+filename log/descent/17400.json terminal reward [-81.8181818181814] average steps taken 1000.0
+total reward -82.7586206896547 timesteps 999
+filename log/descent/149100.json terminal reward [-82.7586206896547] average steps taken 1000.0
+total reward -82.26950354609885 timesteps 999
+filename log/descent/99100.json terminal reward [-82.26950354609885] average steps taken 1000.0
+total reward -87.17948717948647 timesteps 999
+filename log/descent/124600.json terminal reward [-87.17948717948647] average steps taken 1000.0
+total reward -84.02555910543077 timesteps 999
+filename log/descent/94700.json terminal reward [-84.02555910543077] average steps taken 1000.0
+total reward -81.94945848375409 timesteps 999
+filename log/descent/158700.json terminal reward [-81.94945848375409] average steps taken 1000.0
+total reward -84.939759036144 timesteps 999
+filename log/descent/145600.json terminal reward [-84.939759036144] average steps taken 1000.0
+total reward -57.57575757575821 timesteps 999
+filename log/descent/60200.json terminal reward [-57.57575757575821] average steps taken 1000.0
