@@ -106,17 +106,16 @@ startb = np.zeros((1,3))
 weights = []
 
 #actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
-actualw,actualb = load_model('log/carracing.cma.16.64.best.json')
+actualw,actualb = load_model('log/experiment/100.json')
 #startw,notstartb = load_model('log/old/600000.json')
 w = startw
 b = startb.reshape(1,3)
 
 
-
 #ya = w[:4].dot(train_x[:4].T)+b
 #print(ya.T.flatten() - train_y[:4].flatten())
 
-alpha = .05
+alpha = .5
 tolerance = 1e-5
 #freevars = freevars.reshape(180)
 
@@ -124,26 +123,37 @@ tolerance = 1e-5
 iterations = 1
 
 while True:
-    data_x = data_x[:6]
+    #data_x = data_x[:6]
     order = np.random.permutation(len(data_x))
     sgd = 0
     sdb = 0
     error = 0
-    j = 1
+    j = 1000
     numbatch = len(data_x)/j
-    for i in range(numbatch):
-        #train_x = data_x
-        #train_y = data_y
-        train_x = data_x[order[j*i:j*(i+1)]]
-        train_y = data_y[order[j*i:j*(i+1)]]
-        print(train_y)
-        gradient, db, mse = get_gradient(w, b, train_x, train_y)
-        sgd += gradient
-        sdb += db
-        error += mse
-        sgd /= numbatch
-        sdb /= numbatch
-        error /= numbatch
+    train_x = data_x[order[:j]]
+    train_y = data_y[order[:j]]
+    gradient, db, mse = get_gradient(w, b, train_x, train_y)
+    #learnrate = np.divide(actualw - w, gradient)
+    #print(learnrate)
+    #print(np.sum(learnrate, axis=0))
+
+
+    #print(gradient.shape)
+    #print(freevars)
+
+    #if(iterations > 50000):
+        #break
+    #print(gradient)
+    #db = np.zeros((1,3))
+    gradient /= 1000
+    db /= 1000
+
+    error = mse/1000
+
+    #print(error)
+    #sgd = gradient/1000
+    #sdb = db/1000
+    #mse = error/1000
     #learnrate = np.divide(actualw - w, gradient)
     #print(learnrate)
     #print(np.sum(learnrate, axis=0))
@@ -156,8 +166,8 @@ while True:
         #break
     #print(gradient)
     #db = np.zeros((1,3))
-    new_w = w - alpha * sgd
-    new_b = b - alpha * sdb
+    new_w = w - alpha * gradient
+    new_b = b - alpha * db
     
 
     #print("x", train_x)
@@ -170,10 +180,14 @@ while True:
     if iterations % 100 == 0:
         print "Iteration: %d - Error: %.4f - Deviation: %.4f" %(iterations, error, (np.square(new_w-actualw).mean(axis=None)))
         weights.append(np.concatenate((new_b,new_w)))
-    if iterations %300 == 0:
+    if iterations %1000 == 0:
         print "Saving weights until %d\n", (iterations)
-        filenames = savejson(weights, "log/human/", iterations)
+        filenames = savejson(weights, "log/suboptimal/", iterations)
         weights = []
+        file = open("learnrate.txt", "r")
+        alpha = float(file.read())
+        print("learning rate is ")
+        print(alpha) 
         #print "Evaluating with %d size and %d rank\n", (size, rank)
         #evaluate_descent.run(size, rank, filenames)
 

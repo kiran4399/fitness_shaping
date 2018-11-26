@@ -109,6 +109,7 @@ class CMAES:
   def ask(self):
     '''returns a list of parameters'''
     self.solutions = np.array(self.es.ask())
+    print("number of sols", len(self.solutions), "popsize", self.popsize)
     return self.solutions
 
   def tell(self, reward_table_result):

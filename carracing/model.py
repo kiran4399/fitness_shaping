@@ -233,7 +233,7 @@ def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, s
       recording_action.append(action)
       recording_haction.append(truth)
       recording_origin.append(origin)
-      print(action)
+      #print(action)
       
       obs, reward, done, info = model.env.step(action)
       model.env.render()

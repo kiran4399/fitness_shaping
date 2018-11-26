@@ -192,7 +192,7 @@ def worker(weights, seed, train_mode_int=1, max_len=-1):
 
   train_mode = (train_mode_int == 1)
   model.set_model_params(weights)
-  reward_list, t_list = simulate(model,
+  reward_list, t_list = simulate(model, False,
     train_mode=train_mode, render_mode=False, num_episode=num_episode, seed=seed, max_len=max_len)
   if batch_mode == 'min':
     reward = np.min(reward_list)
@@ -456,9 +456,9 @@ if __name__ == "__main__":
                                                 'using pepg, ses, openes, ga, cma'))
   
   parser.add_argument('-o', '--optimizer', type=str, help='ses, pepg, openes, ga, cma.', default='cma')
-  parser.add_argument('--num_episode', type=int, default=16, help='num episodes per trial')
+  parser.add_argument('--num_episode', type=int, default=1, help='num episodes per trial')
   parser.add_argument('--eval_steps', type=int, default=1, help='evaluate every eval_steps step')
-  parser.add_argument('-n', '--num_worker', type=int, default=64)
+  parser.add_argument('-n', '--num_worker', type=int, default=2)
   parser.add_argument('-t', '--num_worker_trial', type=int, help='trials per worker', default=1)
   parser.add_argument('--antithetic', type=int, default=1, help='set to 0 to disable antithetic sampling')
   parser.add_argument('--cap_time', type=int, default=0, help='set to 0 to disable capping timesteps to 2x of average.')
