@@ -233,7 +233,6 @@ def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, s
       recording_action.append(action)
       recording_haction.append(truth)
       recording_origin.append(origin)
-      #print(action)
       
       obs, reward, done, info = model.env.step(action)
       model.env.render()
@@ -317,12 +316,12 @@ def main():
     reward, steps_taken = simulate(model, expert,
       train_mode=False, render_mode=render_mode, num_episode=1)
     if render_mode:
-      print("terminal reward", reward, "average steps taken", np.mean(steps_taken)+1)
+      print("file", filename, "terminal reward", reward, "average steps taken", np.mean(steps_taken)+1)
     else:
       print(reward[0])
     reward_list.append(reward[0])
   if not render_mode:
-    print("seed", the_seed, "average_reward", np.mean(reward_list), "stdev", np.std(reward_list))
+    print("file", filename, "seed", the_seed, "average_reward", np.mean(reward_list), "stdev", np.std(reward_list))
 
 if __name__ == "__main__":
   main()

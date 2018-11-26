@@ -1,0 +1,651 @@
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1500.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15100.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15200.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10400.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13600.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11200.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15500.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14700.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11300.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10600.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12900.json
+2018-11-26 15:43:43.150929: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12200.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12300.json
+model using cpu
+2018-11-26 15:43:43.422601: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14800.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14600.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12100.json
+2018-11-26 15:43:43.649079: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:43.665182: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:43.672357: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:43.677435: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:43.801022: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15600.json
+2018-11-26 15:43:43.838622: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11600.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11000.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11800.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10100.json
+model using cpu
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13100.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12700.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1300.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14500.json
+2018-11-26 15:43:44.248808: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14200.json
+model using cpu
+2018-11-26 15:43:44.476261: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13800.json
+2018-11-26 15:43:44.499893: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1000.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15400.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13200.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12400.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13300.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13000.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1200.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12000.json
+2018-11-26 15:43:44.657065: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:44.682637: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:44.713870: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14300.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11400.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10000.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14000.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10900.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10500.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15300.json
+2018-11-26 15:43:44.938979: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12800.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11500.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1100.json
+model using cpu
+2018-11-26 15:43:45.050514: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.088528: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-26 15:43:45.139043: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10800.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10200.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13500.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/15000.json
+model using cpu
+2018-11-26 15:43:45.450443: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:45.471105: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13900.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/100.json
+2018-11-26 15:43:45.701265: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.726728: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.735091: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10700.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11700.json
+2018-11-26 15:43:45.811831: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.816390: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13700.json
+2018-11-26 15:43:45.843750: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/1400.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11100.json
+model using cpu
+model using cpu
+2018-11-26 15:43:45.912405: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.944915: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.949128: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.952738: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:45.960058: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.964298: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:45.978679: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12500.json
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/10300.json
+2018-11-26 15:43:46.143061: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-26 15:43:46.263336: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14100.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/12600.json
+model using cpu
+model using cpu
+model using cpu
+2018-11-26 15:43:46.335625: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:46.329551: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+2018-11-26 15:43:46.384050: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14900.json
+model using cpu
+model using cpu
+2018-11-26 15:43:46.545239: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:46.567118: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:46.593177: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:46.614329: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:46.619448: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/14400.json
+2018-11-26 15:43:46.741123: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:46.767611: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:46.775984: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:46.887263: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:46.994831: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+model using cpu
+2018-11-26 15:43:47.232693: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+2018-11-26 15:43:47.283439: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/11900.json
+filename /home/kiran/fitness_shaping/carracing/log/suboptimal/13400.json
+2018-11-26 15:43:47.494939: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.496672: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.514945: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.548825: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:47.572826: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.631128: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.658828: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.702752: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.709445: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:47.755328: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+2018-11-26 15:43:47.824308: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+model using cpu
+2018-11-26 15:43:47.990714: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+model using cpu
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+model using cpu
+model using cpu
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+2018-11-26 15:43:49.211380: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2018-11-26 15:43:49.474729: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+model using cpu
+model using cpu
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13300.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/15500.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11800.json
+Track generation: 1187..1494 -> 307-tiles track
+Track generation: 1179..1478 -> 299-tiles track
+Track generation: 1148..1439 -> 291-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12300.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13900.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11200.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10400.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1100..1379 -> 279-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/1500.json
+Track generation: 1171..1468 -> 297-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14600.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1212..1519 -> 307-tiles track
+Track generation: 1108..1389 -> 281-tiles track
+Track generation: 1043..1314 -> 271-tiles track
+Track generation: 1080..1358 -> 278-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1111..1393 -> 282-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14800.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11400.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13800.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10300.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+Track generation: 1190..1502 -> 312-tiles track
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12000.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1042..1314 -> 272-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11300.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10500.json
+Track generation: 1313..1646 -> 333-tiles track
+ERROR; return code from pthread_create() is 11
+	Error detail: Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+Track generation: 1176..1474 -> 298-tiles track
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+terminate called after throwing an instance of 'std::system_error'
+  what():  Resource temporarily unavailable
+Aborted (core dumped)
+Track generation: 1004..1259 -> 255-tiles track
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10700.json
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Track generation: 1171..1468 -> 297-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/1000.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1224..1534 -> 310-tiles track
+Track generation: 1115..1400 -> 285-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1254..1572 -> 318-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1112..1394 -> 282-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14000.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10100.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1215..1523 -> 308-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14200.json
+Track generation: 949..1195 -> 246-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1372..1719 -> 347-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13200.json
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12700.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/15400.json
+Track generation: 1179..1482 -> 303-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12200.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/1300.json
+Track generation: 1188..1489 -> 301-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+Track generation: 1062..1332 -> 270-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14300.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/1200.json
+Track generation: 1219..1534 -> 315-tiles track
+Track generation: 1215..1523 -> 308-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12800.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10600.json
+Track generation: 1125..1410 -> 285-tiles track
+Track generation: 1032..1297 -> 265-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1085..1366 -> 281-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12100.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12400.json
+Track generation: 1185..1490 -> 305-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/1100.json
+Track generation: 1319..1660 -> 341-tiles track
+Track generation: 1088..1364 -> 276-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/15100.json
+Track generation: 1160..1454 -> 294-tiles track
+input dropout mode = False
+output dropout mode = False
+recurrent dropout mode = False
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/12900.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11900.json
+Track generation: 1197..1500 -> 303-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13500.json
+Track generation: 1161..1455 -> 294-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14900.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10800.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/14500.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10000.json
+Track generation: 1107..1388 -> 281-tiles track
+Track generation: 1255..1573 -> 318-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/11600.json
+Track generation: 1251..1567 -> 316-tiles track
+Track generation: 1155..1449 -> 294-tiles track
+Track generation: 1135..1423 -> 288-tiles track
+Track generation: 1188..1489 -> 301-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13100.json
+Track generation: 1083..1368 -> 285-tiles track
+Track generation: 1228..1539 -> 311-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/15200.json
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13000.json
+Track generation: 1085..1360 -> 275-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13700.json
+Track generation: 1140..1429 -> 289-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/10900.json
+Track generation: 1068..1347 -> 279-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13600.json
+Track generation: 1153..1446 -> 293-tiles track
+Track generation: 1017..1278 -> 261-tiles track
+retry to generate track (normal if there are not many of this messages)
+Track generation: 1227..1538 -> 311-tiles track
+Track generation: 1213..1520 -> 307-tiles track
+model size 867
+loading file /home/kiran/fitness_shaping/carracing/log/suboptimal/13400.json
+Track generation: 1048..1318 -> 270-tiles track
+total reward -53.02013422818873 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/15500.json terminal reward [-53.02013422818873] average steps taken 1000.0
+total reward -2.0270270270265756 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13900.json terminal reward [-2.0270270270265756] average steps taken 1000.0
+total reward -65.51724137931106 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11800.json terminal reward [-65.51724137931106] average steps taken 1000.0
+total reward -28.104575163399478 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13300.json terminal reward [-28.104575163399478] average steps taken 1000.0
+total reward -28.825622775801516 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14600.json terminal reward [-28.825622775801516] average steps taken 1000.0
+total reward -49.64028776978498 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12300.json terminal reward [-49.64028776978498] average steps taken 1000.0
+total reward 66.05166051661033 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11400.json terminal reward [66.05166051661033] average steps taken 1000.0
+total reward -40.944881889764595 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12000.json terminal reward [-40.944881889764595] average steps taken 1000.0
+total reward -7.142857142856732 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11200.json terminal reward [-7.142857142856732] average steps taken 1000.0
+total reward -32.47588424437377 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14800.json terminal reward [-32.47588424437377] average steps taken 1000.0
+total reward -51.85185185185268 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/1500.json terminal reward [-51.85185185185268] average steps taken 1000.0
+total reward -44.44444444444524 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10400.json terminal reward [-44.44444444444524] average steps taken 1000.0
+total reward -64.40129449838265 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11300.json terminal reward [-64.40129449838265] average steps taken 1000.0
+total reward 141.0423452768783 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14000.json terminal reward [141.0423452768783] average steps taken 1000.0
+total reward -49.32432432432513 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10500.json terminal reward [-49.32432432432513] average steps taken 1000.0
+total reward -60.85409252669121 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/1000.json terminal reward [-60.85409252669121] average steps taken 1000.0
+total reward 38.775510204084945 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10100.json terminal reward [38.775510204084945] average steps taken 1000.0
+total reward -2.356902356901697 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10300.json terminal reward [-2.356902356901697] average steps taken 1000.0
+total reward -66.86746987951868 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13800.json terminal reward [-66.86746987951868] average steps taken 1000.0
+total reward -33.7539432176664 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10700.json terminal reward [-33.7539432176664] average steps taken 1000.0
+total reward -47.9553903345733 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/15400.json terminal reward [-47.9553903345733] average steps taken 1000.0
+total reward -57.74647887324025 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/1200.json terminal reward [-57.74647887324025] average steps taken 1000.0
+total reward -11.262798634812096 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12400.json terminal reward [-11.262798634812096] average steps taken 1000.0
+total reward -28.57142857142941 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14300.json terminal reward [-28.57142857142941] average steps taken 1000.0
+total reward 12.582781456955159 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13200.json terminal reward [12.582781456955159] average steps taken 1000.0
+total reward -45.454545454546285 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12100.json terminal reward [-45.454545454546285] average steps taken 1000.0
+total reward 5.839416058395226 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13100.json terminal reward [5.839416058395226] average steps taken 1000.0
+total reward -53.33333333333414 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12700.json terminal reward [-53.33333333333414] average steps taken 1000.0
+total reward -61.26760563380363 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10000.json terminal reward [-61.26760563380363] average steps taken 1000.0
+total reward -62.42774566474068 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14200.json terminal reward [-62.42774566474068] average steps taken 1000.0
+total reward -58.333333333334146 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/15200.json terminal reward [-58.333333333334146] average steps taken 1000.0
+total reward -38.84892086331016 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13000.json terminal reward [-38.84892086331016] average steps taken 1000.0
+total reward -58.59872611465049 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/1300.json terminal reward [-58.59872611465049] average steps taken 1000.0
+total reward -41.97952218430114 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/15100.json terminal reward [-41.97952218430114] average steps taken 1000.0
+total reward 189.90228013029585 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12200.json terminal reward [189.90228013029585] average steps taken 1000.0
+total reward -24.836601307190325 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13600.json terminal reward [-24.836601307190325] average steps taken 1000.0
+total reward -39.2857142857151 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12900.json terminal reward [-39.2857142857151] average steps taken 1000.0
+total reward 11.498257839722651 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10800.json terminal reward [11.498257839722651] average steps taken 1000.0
+total reward -21.501706484642412 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14900.json terminal reward [-21.501706484642412] average steps taken 1000.0
+total reward -63.576158940398166 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/1100.json terminal reward [-63.576158940398166] average steps taken 1000.0
+total reward -51.61290322580725 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10900.json terminal reward [-51.61290322580725] average steps taken 1000.0
+total reward -60.00000000000081 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/14500.json terminal reward [-60.00000000000081] average steps taken 1000.0
+total reward 64.037854889595 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11900.json terminal reward [64.037854889595] average steps taken 1000.0
+total reward 81.50684931507351 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13700.json terminal reward [81.50684931507351] average steps taken 1000.0
+total reward -14.473684210526468 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/10600.json terminal reward [-14.473684210526468] average steps taken 1000.0
+total reward -17.460317460317835 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13500.json terminal reward [-17.460317460317835] average steps taken 1000.0
+total reward -41.17647058823611 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/12800.json terminal reward [-41.17647058823611] average steps taken 1000.0
+total reward -6.451612903226081 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/11600.json terminal reward [-6.451612903226081] average steps taken 1000.0
+total reward 33.82899628253088 timesteps 999
+file /home/kiran/fitness_shaping/carracing/log/suboptimal/13400.json terminal reward [33.82899628253088] average steps taken 1000.0
