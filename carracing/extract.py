@@ -14,7 +14,7 @@ MAX_TRIALS = 2 # just use this to extract one trial.
 
 render_mode = False # for debugging.
 
-DIR_NAME = 'subrecord'
+DIR_NAME = '/home/kiran/subrecord'
 if not os.path.exists(DIR_NAME):
     os.makedirs(DIR_NAME)
 
