@@ -1,6 +1,7 @@
 import numpy as np
 import json
-
+import copy
+import os
 params = 867
 
 
@@ -31,6 +32,21 @@ def gensamples(filename, numsamples):
 
     savejson(samples, 'log/samples/', 0)
 
-
+def absoluteFilePaths(directory):
+   for dirpath,_,filenames in os.walk(directory):
+       for f in filenames:
+           yield os.path.abspath(os.path.join(dirpath, f))
 
 gensamples('log/experiment/300.json', 64)
+samples = sorted(absoluteFilePaths('log/samples/'))
+newmean = load_weight('log/experiment/400.json')
+mu = load_weight('log/experiment/300.json')
+newweight = copy.deepcopy(samples)
+constants = copy.deepcopy(samples)
+for i in range(len(samples)):
+    newweight[i] = (load_weight(samples[i]) - newmean)
+    #print(newweight[i].shape)
+    constants[i] = np.mean(newweight[i]/load_weight(samples[i]))
+    print(newweight[i])
+print(constants)
+savejson(newweight, 'log/newsamples/', 0)
