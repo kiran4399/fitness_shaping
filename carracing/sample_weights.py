@@ -30,14 +30,16 @@ def gensamples(filename, numsamples):
 
     samples = np.random.multivariate_normal(mu,sigma, numsamples)
 
-    savejson(samples, 'log/samples/', 0)
+    savejson(samples, 'log/human/', 0)
 
 def absoluteFilePaths(directory):
    for dirpath,_,filenames in os.walk(directory):
        for f in filenames:
            yield os.path.abspath(os.path.join(dirpath, f))
 
-gensamples('log/experiment/300.json', 64)
+gensamples('log/carracing.cma.16.64.json', 64)
+
+'''
 samples = sorted(absoluteFilePaths('log/samples/'))
 newmean = load_weight('log/experiment/400.json')
 mu = load_weight('log/experiment/300.json')
@@ -50,3 +52,4 @@ for i in range(len(samples)):
     print(newweight[i])
 print(constants)
 savejson(newweight, 'log/newsamples/', 0)
+'''
