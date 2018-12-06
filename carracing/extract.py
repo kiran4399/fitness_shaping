@@ -12,9 +12,9 @@ from model import make_model
 MAX_FRAMES = 1000 # max length of carracing
 MAX_TRIALS = 2 # just use this to extract one trial. 
 
-render_mode = False # for debugging.
+render_mode = True # for debugging.
 
-DIR_NAME = '/home/kiran/subrecord'
+DIR_NAME = '/home/kiran/record'
 if not os.path.exists(DIR_NAME):
     os.makedirs(DIR_NAME)
 
@@ -22,13 +22,13 @@ model = make_model()
 
 total_frames = 0
 model.make_env(render_mode=render_mode, full_episode=True)
-#model.load_model('log/carracing.cma.16.64.best.json')
-filelist = sorted(os.listdir('log/human/'))
-ind = np.random.randint(len(filelist))
+model.load_model('log/carracing.cma.16.64.best.json')
+#filelist = sorted(os.listdir('log/human/'))
+#ind = np.random.randint(len(filelist))
 for trial in range(MAX_TRIALS): # 200 trials per worker
   try:
 
-    model.load_model('log/experiment/' + filelist[ind])
+    #model.load_model('log/experiment/' + filelist[ind])
     random_generated_int = random.randint(0, 2**31-1)
     filename = DIR_NAME+"/"+str(random_generated_int)+".npz"
     recording_obs = []
