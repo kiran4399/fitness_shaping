@@ -217,9 +217,9 @@ def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, s
 
     total_reward = 0.0
 
-    random_generated_int = np.random.randint(2**31-1)
+    #random_generated_int = np.random.randint(2**31-1)
 
-    filename = "generation/"+str(random_generated_int)+".npz"
+    filename = "data/"+str(seed)+".npz"
     recording_mu = []
     recording_logvar = []
     recording_h = []
@@ -233,30 +233,30 @@ def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, s
       z, mu, logvar = model.encode_obs(obs)
       h, action, origin = model.get_action(z)
 
+      if expert:
+        for event in pygame.event.get(): # User did something
+          if event.type == pygame.QUIT: # If user clicked close
+            done=True # Flag that we are done so we exit this loop
 
-      for event in pygame.event.get(): # User did something
-        if event.type == pygame.QUIT: # If user clicked close
-          done=True # Flag that we are done so we exit this loop
+        joystick = pygame.joystick.Joystick(0)
+        joystick.init()
+        axes = joystick.get_numaxes()
+        steer = joystick.get_axis(0)
+        accel = joystick.get_axis(4)
+        if accel > 0:
+          a = np.array([steer, 0, accel])
 
-      joystick = pygame.joystick.Joystick(0)
-      joystick.init()
-      axes = joystick.get_numaxes()
-      steer = joystick.get_axis(0)
-      accel = joystick.get_axis(4)
-      if accel > 0:
-        a = np.array([steer, 0, accel])
-
-      else:
-        a = np.array([steer, -accel, 0])
+        else:
+          a = np.array([steer, -accel, 0])
 
 
-      clock.tick(20)
-      #action = a
-      if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False or expert == True:
-        action = copy.deepcopy(a)
-        truth = False
-      else:
-        truth = True
+        clock.tick(20)
+        #action = a
+        if np.array_equal(a, np.array([0.0, 0.0, 0.0])) == False or expert == True:
+          action = copy.deepcopy(a)
+          truth = False
+        else:
+          truth = True
   
       recording_h.append(h)
       recording_mu.append(mu)
@@ -268,7 +268,7 @@ def simulate(model, expert, train_mode=False, render_mode=True, num_episode=5, s
       obs, reward, done, info = model.env.step(action)
       model.env.render()
 
-      print(reward)
+      #print(reward)
       extra_reward = 0.0 # penalize for turning too frequently
       if train_mode and penalize_turning:
         extra_reward -= np.abs(action[0])/10.0
@@ -309,12 +309,14 @@ def absoluteFilePaths(directory):
 
 def main():
   #assert len(sys.argv) > 1, 'python model.py render/norender path_to_mode.json [seed]'
+  the_seed = np.random.randint(10000)
   if len(sys.argv) == 2:
     expert = True
+    the_seed = 243195275
 
   else:
     expert = False
-  
+
   render_mode_string = str(sys.argv[1])
   if (render_mode_string == "render"):
     render_mode = True
@@ -327,7 +329,6 @@ def main():
     filename = sys.argv[2]
     print("filename", filename)
 
-  the_seed = np.random.randint(10000)
   if len(sys.argv) > 3:
     the_seed = int(sys.argv[3])
     print("seed", the_seed)
@@ -349,7 +350,7 @@ def main():
   reward_list = []
   for i in range(N_episode):
     reward, steps_taken = simulate(model, expert,
-      train_mode=False, render_mode=render_mode, num_episode=1)
+      train_mode=False, render_mode=render_mode, num_episode=1, seed=the_seed)
     if render_mode:
       print("terminal reward", reward, "average steps taken", np.mean(steps_taken)+1)
     else:

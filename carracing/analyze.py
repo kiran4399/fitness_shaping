@@ -29,8 +29,8 @@ def load_muvar(folder):
 
 
 
-data_a, data_b = load_muvar('generation/')
-
-
-for i in range(len(data_a)):
-    print(data_a[i,1])
+hdata_a, hdata_b = load_muvar('data/human/')
+adata_a, adata_b = load_muvar('data/agent/')
+print("num", "a", "b", "c", "d")
+for i in range(200, len(hdata_b)-200):
+    print(i, adata_b[i,0], hdata_b[i,0], adata_b[i,1], hdata_b[i,1])

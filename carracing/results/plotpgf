@@ -1,0 +1,16 @@
+﻿\begin{tikzpicture}
+  \begin{axis}[
+      %width=10.2cm, %set bigger width
+      %ylabel style={xshift=4ex},
+      xlabel={x-coordinate [m]},
+    ylabel={y-coordinate [m]},
+    ylabel near ticks]
+    ]
+
+    \addplot[line width=0.01mm, blue] table[y=b, x=a, col sep=comma] {/home/kiran/Dropbox/shaperl_icml/plots/results/action.csv};
+    
+    %\addlegendentry{Ground Truth}
+    %\addplot[line width=0.01mm, red] table[y=b, x=a, col sep=comma] {/home/kiran/Downloads/sonar-based-fused/data/mh2.csv};
+    %\addlegendentry{System}
+  \end{axis}
+\end{tikzpicture}
